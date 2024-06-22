@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar Animation</title>
+    <style>
+      .progress {
+        width: 100%;
+        background-color: #f3f3f3;
+      }
+
+      .progress-bar {
+        width: 0;
+        height: 20px;
+        background-color: #9b9b9b;
+        text-align: center;
+        line-height: 20px;
+        color: white;
+        border-radius: 2em;
+        animation: load 5s infinite;
+      }
+
+      @keyframes load {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress">
+      <div class="progress-bar">Loading...</div>
+    </div>
+  </body>
+</html>

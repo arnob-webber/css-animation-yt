@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Rating</title>
+    <style>
+      .star-rating {
+        display: inline-block;
+        direction: rtl;
+        font-size: 2em;
+      }
+
+      .star-rating input {
+        display: none;
+      }
+
+      .star-rating label {
+        color: gray;
+        cursor: pointer;
+      }
+
+      .star-rating input:checked ~ label,
+      .star-rating input:hover ~ label,
+      .star-rating input:hover ~ label ~ label {
+        color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="star-rating">
+      <input type="radio" id="star5" name="rating" value="5" />
+      <label for="star5">&#9733;</label>
+      <input type="radio" id="star4" name="rating" value="4" />
+      <label for="star4">&#9733;</label>
+      <input type="radio" id="star3" name="rating" value="3" />
+      <label for="star3">&#9733;</label>
+      <input type="radio" id="star2" name="rating" value="2" />
+      <label for="star2">&#9733;</label>
+      <input type="radio" id="star1" name="rating" value="1" />
+      <label for="star1">&#9733;</label>
+    </div>
+  </body>
+</html>
